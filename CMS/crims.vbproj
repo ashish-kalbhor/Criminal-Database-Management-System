@@ -1,0 +1,410 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <MyType>WindowsForms</MyType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{769F3ED7-C5B7-462F-A805-89928A6E80CB}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>Project1</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Project1.frml3</StartupObject>
+    <AssemblyMajorVersion>1</AssemblyMajorVersion>
+    <AssemblyMinorVersion>0</AssemblyMinorVersion>
+    <AssemblyRevisionNumber>0</AssemblyRevisionNumber>
+    <GenerateRevisionNumber>False</GenerateRevisionNumber>
+    <AssemblyCompanyName>asd</AssemblyCompanyName>
+    <StartWithIE>False</StartWithIE>
+    <ApplicationIcon>crims.ico</ApplicationIcon>
+    <RootNamespace>Project1</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\bin\</OutputPath>
+    <DocumentationFile>Project1.xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DefineDebug>True</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\bin\</OutputPath>
+    <DocumentationFile>Project1.xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DefineDebug>False</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <Name>Microsoft.VisualBasic.Compatibility</Name>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility.Data">
+      <Name>Microsoft.VisualBasic.Compatibility.Data</Name>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks">
+      <Name>Microsoft.VisualBasic.PowerPacks</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.XML">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="ADODB">
+      <Guid>{EF53050B-882E-4776-B643-EDA472E8E3F2}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="AxMSChart20Lib">
+      <Guid>{65E121D4-0C60-11D2-A9FC-0000F8754DA1}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="AxMSDataGridLib">
+      <Guid>{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="AxMSFlexGridLib">
+      <Guid>{5E9E78A0-531B-11CF-91F6-C2863C385E30}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="AxMSHierarchicalFlexGridLib">
+      <Guid>{0ECD9B60-23AA-11D0-B351-00A0C9055D8E}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="AxPageNavbarDTCLib">
+      <Guid>{705396E5-3471-11D1-B693-006097C9A884}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="Microsoft.StdFormat">
+      <Guid>{6B263850-900B-11D0-9484-00A0C91110ED}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSAdodcLib">
+      <Guid>{67397AA1-7FB1-11D0-B148-00A0C922E820}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSChart20Lib">
+      <Guid>{65E121D4-0C60-11D2-A9FC-0000F8754DA1}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSDataGridLib">
+      <Guid>{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSDataReportLib">
+      <Guid>{642AC760-AAB4-11D0-8494-00A0C90DC8A9}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSDATASRC">
+      <Guid>{7C0FFAB0-CD84-11D0-949A-00A0C91110ED}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSFlexGridLib">
+      <Guid>{5E9E78A0-531B-11CF-91F6-C2863C385E30}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSHierarchicalFlexGridLib">
+      <Guid>{0ECD9B60-23AA-11D0-B351-00A0C9055D8E}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="PageNavbarDTCLib">
+      <Guid>{705396E5-3471-11D1-B693-006097C9A884}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.Compatibility" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="cmsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cmsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="crime_record.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataEnvironment1.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcat.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmcat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmchrge.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmchrge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmchrge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfir.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmfir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmfir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfir2.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmfir2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmfir2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfir3.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmfir3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmfir3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmgraph.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>Frmgraph.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frmgraph.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminfo.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frminfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frminfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frml1.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frml1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frml1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frml2.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frml2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frml2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frml3.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frml3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frml3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.vb">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmu.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIForm1.Designer.vb">
+      <DependentUpon>MDIForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="off.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>off.vb</DependentUpon>
+    </Compile>
+    <Compile Include="off.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Form2.resX">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcat.resX">
+      <DependentUpon>frmcat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmchrge.resX">
+      <DependentUpon>frmchrge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfir.resX">
+      <DependentUpon>frmfir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfir2.resX">
+      <DependentUpon>frmfir2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfir3.resX">
+      <DependentUpon>frmfir3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmgraph.resX">
+      <DependentUpon>Frmgraph.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminfo.resX">
+      <DependentUpon>frminfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frml1.resX">
+      <DependentUpon>frml1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frml2.resX">
+      <DependentUpon>frml2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frml3.resX">
+      <DependentUpon>frml3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resX">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmu.resX">
+      <DependentUpon>frmu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIForm1.resX">
+      <DependentUpon>MDIForm1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="off.resX">
+      <DependentUpon>off.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="cmsDataSet.xsc">
+      <DependentUpon>cmsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cmsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cmsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cmsDataSet.xss">
+      <DependentUpon>cmsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DATAREPORT1.dsr" />
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="_UpgradeReport.htm">
+      <SubType>Preview</SubType>
+    </None>
+    <Content Include="cms.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="crims.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

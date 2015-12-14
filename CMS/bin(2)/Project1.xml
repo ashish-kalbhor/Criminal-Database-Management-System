@@ -1,0 +1,63 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Project1
+</name>
+</assembly>
+<members>
+<member name="T:Project1.cmsDataSet.DnameDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Project1.cmsDataSet.DnameRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Project1.cmsDataSet.DnameRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Project1.cmsDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Project1.cmsDataSetTableAdapters.DnameTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Project1.cmsDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Project1.cmsDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Project1.cmsDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Project1.cmsDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Project1.cmsDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Project1.cmsDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Project1.cmsDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Project1.cmsDataSetTableAdapters.TableAdapterManager.UpdateAll(Project1.cmsDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Project1.cmsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Project1.cmsDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Project1.cmsDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>
